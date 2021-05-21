@@ -1,0 +1,85 @@
+.calendar {
+  margin: 30px;
+  box-shadow: 0 0 28px -5px #000;
+}
+
+.calendar__title {
+  margin-bottom: 20px;
+}
+
+.calendar td,
+.calendar th {
+  position: relative;
+  padding: 15px;
+  border: 1px solid;
+  text-align: center;
+  background: #ffd334;
+  color: #fff;
+}
+
+.calendar td {
+  cursor: pointer;
+}
+
+.calendar .clientTasks {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #000;
+}
+
+.calendar .tasks-list {
+  position: absolute;
+  z-index: 100;
+  display: none;
+  left: 20px;
+  top: 20px;
+  min-width: 100px;
+  padding: 10px;
+  background: #22cc00;
+  color: #fff;
+  text-align: left;
+  box-shadow: 0 0 10px #333;
+}
+
+.calendar .tasks-list.open {
+  display: block;
+}
+
+.calendar .tasks-list.open:hover {
+  z-index: 300;
+}
+
+.calendar .tasks-list__list {
+  margin: 0;
+  padding: 0;
+}
+
+.calendar .tasks-list__item {
+  list-style-type: none;
+}
+
+.calendar .tasks-list__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.calendar .weekend {
+  background: violet;
+}
+
+.calendar .unactive {
+  opacity: .7;
+}
+
+.calendar .current-day {
+  background: red;
+}
